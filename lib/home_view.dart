@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
+import 'haptics.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -19,11 +21,30 @@ class HomeView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
-              child: Text(
-                'Pranav Masekar',
-                style: ShadTheme.of(context).textTheme.h2,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ShadButton(
+                  onPressed: () async {
+                    await HapticsApi().triggerHapticFeedback('Light');
+                  },
+                  child: const Text('Light'),
+                ),
+                const SizedBox(width: 12),
+                ShadButton(
+                  onPressed: () async {
+                    await HapticsApi().triggerHapticFeedback('Medium');
+                  },
+                  child: const Text('Medium'),
+                ),
+                const SizedBox(width: 12),
+                ShadButton(
+                  onPressed: () async {
+                    await HapticsApi().triggerHapticFeedback('Heavy');
+                  },
+                  child: const Text('Heavy'),
+                ),
+              ],
             ),
           ],
         ),

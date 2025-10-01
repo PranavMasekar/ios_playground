@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		29F0F7532E8CF56E0074625F /* Airplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0F7522E8CF56E0074625F /* Airplay.swift */; };
+		29F0F7552E8CF5880074625F /* AirplayImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0F7542E8CF5880074625F /* AirplayImplementation.swift */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3CA4A560E3EBB4A4E5AF14F1 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D767322E1B48D8877CEB6AE3 /* Pods_Runner.framework */; };
@@ -45,6 +47,8 @@
 		0365EFBFCB127B9FE2AA0451 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		29F0F7522E8CF56E0074625F /* Airplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airplay.swift; sourceTree = "<group>"; };
+		29F0F7542E8CF5880074625F /* AirplayImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayImplementation.swift; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				29F0F7522E8CF56E0074625F /* Airplay.swift */,
+				29F0F7542E8CF5880074625F /* AirplayImplementation.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -161,7 +167,6 @@
 				82E00D214DC1DEBAAFB8E19A /* Pods-RunnerTests.release.xcconfig */,
 				C79F4EE6CFCB334292A3E276 /* Pods-RunnerTests.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -379,6 +384,8 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				29F0F7552E8CF5880074625F /* AirplayImplementation.swift in Sources */,
+				29F0F7532E8CF56E0074625F /* Airplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

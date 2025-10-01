@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ios_playground/airplay_api.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -114,7 +115,9 @@ class _HomeViewState extends State<HomeView> {
                   ),
                   const SizedBox(height: 30),
                   ShadButton.secondary(
-                    onPressed: () {},
+                    onPressed: () {
+                      AirplayApi().startAirplay();
+                    },
                     child: const Icon(Icons.airplay_rounded, size: 28),
                   ),
                 ],

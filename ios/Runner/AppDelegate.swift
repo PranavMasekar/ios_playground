@@ -8,6 +8,13 @@ import UIKit
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
+      
+    let airplayImplementation = AirplayImplementation()
+                
+    let controller = window?.rootViewController as! FlutterViewController
+                
+    AirplayApiSetup.setUp(binaryMessenger: controller.binaryMessenger, api: airplayImplementation)
+      
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }

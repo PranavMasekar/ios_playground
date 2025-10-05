@@ -45,5 +45,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>This app reads your Health data (steps, calories, heart rate) to show your activity summary.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>This app updates your Health data when needed to keep your activity information accurate.</string>
 </dict>
 </plist>

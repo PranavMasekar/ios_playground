@@ -1,4 +1,4 @@
-package com.example.ios_playground
+package com.pranav.iosPlayground
 
 import io.flutter.embedding.android.FlutterActivity
 

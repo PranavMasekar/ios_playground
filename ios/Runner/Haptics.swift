@@ -96,7 +96,7 @@ class HapticsApiSetup {
   /// Sets up an instance of `HapticsApi` to handle messages through the `binaryMessenger`.
   static func setUp(binaryMessenger: FlutterBinaryMessenger, api: HapticsApi?, messageChannelSuffix: String = "") {
     let channelSuffix = messageChannelSuffix.count > 0 ? ".\(messageChannelSuffix)" : ""
-    let triggerHapticFeedbackChannel = FlutterBasicMessageChannel(name: "dev.flutter.pigeon.com.example.ios_playground.HapticsApi.triggerHapticFeedback\(channelSuffix)", binaryMessenger: binaryMessenger, codec: codec)
+    let triggerHapticFeedbackChannel = FlutterBasicMessageChannel(name: "dev.flutter.pigeon.com.pranav.iosPlayground.HapticsApi.triggerHapticFeedback\(channelSuffix)", binaryMessenger: binaryMessenger, codec: codec)
     if let api = api {
       triggerHapticFeedbackChannel.setMessageHandler { message, reply in
         let args = message as! [Any?]

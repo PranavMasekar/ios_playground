@@ -9,7 +9,7 @@ import 'package:pigeon/pigeon.dart';
     kotlinOptions: KotlinOptions(),
     swiftOut: 'ios/Runner/Haptics.swift',
     swiftOptions: SwiftOptions(),
-    dartPackageName: 'com.example.ios_playground',
+    dartPackageName: 'com.pranav.iosPlayground',
   ),
 )
 @HostApi()

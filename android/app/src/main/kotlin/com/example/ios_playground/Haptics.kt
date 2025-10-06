@@ -69,7 +69,7 @@ interface HapticsApi {
     fun setUp(binaryMessenger: BinaryMessenger, api: HapticsApi?, messageChannelSuffix: String = "") {
       val separatedMessageChannelSuffix = if (messageChannelSuffix.isNotEmpty()) ".$messageChannelSuffix" else ""
       run {
-        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.com.example.ios_playground.HapticsApi.triggerHapticFeedback$separatedMessageChannelSuffix", codec)
+        val channel = BasicMessageChannel<Any?>(binaryMessenger, "dev.flutter.pigeon.com.pranav.iosPlayground.HapticsApi.triggerHapticFeedback$separatedMessageChannelSuffix", codec)
         if (api != null) {
           channel.setMessageHandler { message, reply ->
             val args = message as List<Any?>
